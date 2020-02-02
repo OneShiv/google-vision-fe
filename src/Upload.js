@@ -33,7 +33,7 @@ class Upload extends React.Component {
   }
   render() {
     return (
-      <>
+      <div>
       <div className="upload-container">
         <div className="part-1">
           {this.state.file && <img src={this.state.file} alt="uploaded" />}
@@ -46,7 +46,7 @@ class Upload extends React.Component {
       <div className="btn-wrap">
         <input type="file" onChange={this.handleChange} className="input-btn"/>
       </div>
-      </>
+      </div>
     );
   }
 }
